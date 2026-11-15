@@ -5,10 +5,10 @@ vector tile format that can be hosted on static storage and read with HTTP range
 
 ## Projects
 
-| Project | Output | Layers | Source |
-|---|---|---|---|
-| [`project-noah-hazard-maps-pmtiles`](project-noah-hazard-maps-pmtiles/) | `noah_hazard_maps.pmtiles` | 9 | Project NOAH hazard map shapefiles (~575 ZIPs, ~95 GB) |
-| [`ph-osm-pmtiles`](ph-osm-pmtiles/) | `ph_osm.pmtiles` | 12 | HOT OpenStreetMap exports for the Philippines (12 PMTiles, ~939 MB) |
+| Project | Output | Layers | Source | Hugging Face |
+|---|---|---|---|---|
+| [`project-noah-hazard-maps-pmtiles`](project-noah-hazard-maps-pmtiles/) | `noah_hazard_maps.pmtiles` | 9 | Project NOAH hazard map shapefiles (~575 ZIPs, ~95 GB) | [project-noah-hazard-maps](https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps) |
+| [`ph-osm-pmtiles`](ph-osm-pmtiles/) | `ph_osm.pmtiles` | 12 | HOT OpenStreetMap exports for the Philippines (12 PMTiles, ~939 MB) | [ph-osm-pmtiles](https://huggingface.co/datasets/bettergovph/ph-osm-pmtiles) |
 
 ### project-noah-hazard-maps-pmtiles
 
@@ -16,10 +16,11 @@ Flood, landslide, debris flow and storm surge hazard maps.
 
 - **Input:** shapefiles from the
   [Project NOAH Hazard Maps](https://drive.google.com/drive/folders/1ALE4-E9c-4AGjm1fqiPprWHrLUskeY9o?usp=drive_link)
-  HuggingFace
 - **Method:** shapefiles are streamed through `ogr2ogr` into `tippecanoe`, one process per layer, then merged with
   `tile-join`
 - **Image:** `ghcr.io/osgeo/gdal` with `tippecanoe` compiled from source and the `pmtiles` CLI
+- **Dataset:** [bettergovph/project-noah-hazard-maps](https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps)
+  on Hugging Face
 
 ### ph-osm-pmtiles
 
@@ -29,6 +30,7 @@ Airports, buildings, roads, health facilities and 8 other OpenStreetMap themes.
 - **Method:** download, validate, then merge into one file with `tile-join` (`pmtiles merge` cannot combine overlapping
   archives)
 - **Image:** `alpine` with tippecanoe built in a throwaway stage and the `pmtiles` CLI
+- **Dataset:** [bettergovph/ph-osm-pmtiles](https://huggingface.co/datasets/bettergovph/ph-osm-pmtiles) on Hugging Face
 
 ## Common layout
 
