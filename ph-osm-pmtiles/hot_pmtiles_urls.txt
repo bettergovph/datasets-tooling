@@ -1,0 +1,12 @@
+https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/railways/hotosm_phl_railways_osm.pmtiles
+https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/sea_ports/hotosm_phl_sea_ports_osm.pmtiles
+https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/airports/hotosm_phl_airports_osm.pmtiles
+https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/financial_services/hotosm_phl_financial_services_osm.pmtiles
+https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/health_facilities/hotosm_phl_health_facilities_osm.pmtiles
+https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/cultural_places/hotosm_phl_cultural_places_osm.pmtiles
+https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/populated_places/hotosm_phl_populated_places_osm.pmtiles
+https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/education_facilities/hotosm_phl_education_facilities_osm.pmtiles
+https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/points_of_interest/hotosm_phl_points_of_interest_osm.pmtiles
+https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/waterways/hotosm_phl_waterways_osm.pmtiles
+https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/roads/hotosm_phl_roads_osm.pmtiles
+https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/buildings/hotosm_phl_buildings_osm.pmtiles

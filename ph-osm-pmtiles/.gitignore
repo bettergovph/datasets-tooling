@@ -1,0 +1,5 @@
+# Downloaded sources and generated output (~1.9 GB)
+source/
+*.pmtiles
+*.pmtiles.part
+*.pmtiles.tmp
